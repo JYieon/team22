@@ -3,12 +3,14 @@ package common;
 import java.util.Scanner;
 
 import common_.김수지.login_MemberService;
+import 이유나.Store;
 
 public class MainClass {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int num;
 		
+		Store a = new Store();
 		login_MemberService lm = new login_MemberService();
 		
 		
@@ -29,6 +31,7 @@ public class MainClass {
 			case 3:
 				break;
 			case 4:
+				a.runStore();
 				break;
 			case 5:
 				break;
