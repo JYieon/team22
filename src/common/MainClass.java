@@ -19,11 +19,11 @@ public class MainClass {
 		
 		while(true) {
 
-			System.out.println("1번");
-			System.out.println("2번");
-			System.out.println("3번 영화"); //최지연
-			System.out.println("4번");
-			System.out.println("5번");
+			System.out.println("1번 로그인");
+			System.out.println("2번 내 정보");
+			System.out.println("3번 영화"); 
+			System.out.println("4번 매점");
+			System.out.println("5번 극장");
 
 			num = input.nextInt();
 			switch(num) {
@@ -32,8 +32,8 @@ public class MainClass {
 				break;
 			case 2:
 				break;
-			case 3: //매점
-				store.movies();
+			case 3: 
+				store.movies(lm.login);
 				break;
 			case 4:
 				a.runStore();
